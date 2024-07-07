@@ -1,0 +1,88 @@
+* {
+     margin: 0;
+     padding: 10px;
+     box-sizing: border-box;
+
+}
+
+
+img {
+     border: 1px solid red;
+
+     width: 250px;
+}
+
+
+.links {
+     border: 1px solid rgb(85, 255, 0);
+     margin: 5px;
+}
+
+/* bodies para */
+.bodyVuelo {
+     /* background-image: url("../Images/asientos.jpeg"); */
+     /* background-position: center; */
+     background-size: cover;
+     border: 1px solid red;
+
+
+}
+
+a {
+
+     font-weight: bold;
+     font-size: 20px;
+     color: hsl(99, 98%, 40%);
+     text-decoration: none;
+}
+
+h1 {
+     font-size: 70px;
+     border: 1px solid rebeccapurple;
+}
+
+/* barra de navegacion */
+.navbar {
+     display: grid;
+     grid-template-columns: 250px auto;
+     border: 1px solid red;
+}
+
+/* botones */
+.mainBTN {
+     color: #fff;
+     border-radius: 0 10px 0 10px;
+     border: none;
+     background-color: hsl(99, 98%, 40%);
+     font-size: 20px;
+}
+
+/* Inputs */
+input[Type="Text"] {
+     text-align: center;
+     color: #000;
+     border: none;
+     border-bottom: 1px solid black;
+}
+
+input:focus {
+     border: none;
+     text-align: center;
+}
+
+/* secciion de todo */
+.container {
+     /* width: auto; */
+     /* align-items: center; */
+     padding: 50px 0 0 50px;
+     margin: 0 50px 0 50px;
+     border-radius: 10px;
+     background-color: #ffff;
+     box-shadow: 1px 1px 5px #000;
+}
+
+.formFlight {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+}
