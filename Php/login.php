@@ -14,13 +14,9 @@
           <div class="title">
                <h1>Clínica</h1>
           </div>
-          <!-- <?php include ("Header.php")?> -->
+          <?php include ("Header.php")?>
      </header>
-     <div class="links">
-          <a href="AEROLINEA.html">AEROLINEA</a>
-          <a href="Clinica.html">CLÍNICA</a>
-          <a href="index.html">HOSPITAL</a>
-     </div>
+   
 
 </body>
 

@@ -1,5 +1,4 @@
 <div class="links">
-     <a href="AEROLINEA.php">AEROLINEA</a>
-     <a href="Clinica.php">CLÍNICA</a>
-     <a href="index.php">HOSPITAL</a>
+     <a href="index.php">Home</a>
+     <a href="invoice.php">Invoice</a>
 </div>
