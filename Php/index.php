@@ -1,5 +1,5 @@
 <?php
-include ("../config/connection.php");
+     include ("../config/connection.php");
 
 // capturo los datso de la consulta y los almacenamos en un array
 function getData()
@@ -8,8 +8,8 @@ function getData()
      $apellido = $_POST['apellido'];
      $cedula = $_POST['id'];
      $email = $_POST['email'];
-     $tratamiento = $_POST['Tratamientos'];
      $phone = $_POST["phone"];
+     $tratamiento = $_POST['Tratamientos'];
 
      return $datos = array($nombre, $apellido, $cedula, $email, $phone, $tratamiento);
 }
@@ -18,13 +18,22 @@ function getData()
 function AddInfo()
 {
      include ("../config/connection.php");
-     $client = getData();
-     $INSERT = 'INSERT INTO clientes(`NOMBRE`,`APELLIDO`,`EMAIL`,`PHONE`,`CEDULA`)
-     VALUES ("Maria","Turnner","mariT@gmail.com","6455-7778","8-000-0000")';
+     $client= getData();
+     // consulta a la base de datos insersion 
+     $INTO = "INSERT INTO usuarios(NOMBRE,APELLIDO,CEDULA,EMAIL,PHONE,TRATAMIENTO)
+VALUES('$client[0]','$client[1]','$client[2]','$client[3]','$client[4]','$client[5]')";
+     ECHO $INTO;
 
-     $result = $conn->query($INSERT);
+
+     $result = $conn->query($INTO);
+
      if ($result) {
+          echo"Consulta lista <br>";
+          $conn->close();
+     }
+     else{
           echo " <script>MostrarError()</script>";
+
      }
 
 
@@ -34,17 +43,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
      if (isset($_POST['mainBTN'])) {
-          $client = getData();
           AddInfo();
+          $client = getData();
           // foreach ($client as $i) {
           //      echo $i . "<br>";
           // }
-          echo $client[0];
-          echo $client[1];
-          echo $client[2];
-          echo $client[3];
-          echo $client[4];
-          echo $client[5];
+          // echo "0 ".$client[0].'<br>';
+          // echo "1 ".$client[1].'<br>';
+          // echo "2 ".$client[2].'<br>';
+          // echo "3 ".$client[3].'<br>';
+          // echo "4 ".$client[4].'<br>';
+          // echo "5 ".$client[5].'<br>';
 
           // header("Location:invoice.php");
 
@@ -90,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </div>
           <div class="titleVuelo">
                <h1>HAPPY SMILES´S</h1>
-          </div>
+          </div> 
      </div>
 
 
@@ -115,14 +124,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <div class="tratamientos">
                          <select name="Tratamientos" required>
-
                               <option value="NULL">Seleccione Tratamientos</option>
                               <option value="Limpieza dental">Limpieza dental</option>
-                              <option value="">Blanqueamiento Dental</option>
-                              <option value="">Sellantes de fosas y fisuras'</option>
-                              <option value="">Tratamiento para la Caries Dental</option>
-                              <option value="">Carillas de Porcelana</option>
-                              <option value="">Resinas</option>
+                              <option value="Blanqueamiento Dental">Blanqueamiento Dental</option>
+                              <option value="Sellantes de fosas y fisuras">Sellantes de fosas y fisuras'</option>
+                              <option value="ratamiento para la Caries Dental">Tratamiento para la Caries Dental</option>
+                              <option value="Carillas de Porcelana<">Carillas de Porcelana</option>
+                              <option value="Resinas">Resinas</option>
 
                          </select>
 
@@ -131,6 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <button name="mainBTN" class="mainBTN">Agendar</button>
                     <!-- <button name="btn">OK</button>      -->
                </form>
+
 
                <div class="footer">
                     <div class="info">
@@ -159,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                          velit amet inventore nemo, molestiae quia aliquam eaque dolore rem, dolorum sint? Repellendus
                          possimus quia reprehenderit ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Sequi ab illum, nostrum perspiciatis, exercitationem vitae velit unde saepe culpa rerum neque
-                         eos placeat, beatae atque aliquam repellat iusto magni molestias?</p>
+                         eos placeat, beatae atque aliquam repellat iusto magni moles</p>
 
                </div>
           </div>
