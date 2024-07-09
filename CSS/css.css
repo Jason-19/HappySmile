@@ -6,49 +6,67 @@
 
 }
 
+/* imagen del form */
+.asideimg img {
+     padding: 0;
+     width: 750px;
+     /* border: 10px solid red; */
+     border-radius: 30px;
+}
 
-img {
-     width: 100px;
+.img_info img {
+     width: 600px;
+     border-radius: 70px 0;
 }
 
 
-.links {
-     margin: 10 px;
-     backdrop-filter: blur(10px);
+.user img {
+     border-radius: 25px;
+     width: 100px;
+     display: none;
+}
 
+.links {
+     position: sticky;
+     margin: 10px;
+     backdrop-filter: blur(100px);
+     background-color: #fff;
 }
 
 .links a {
 
      font-weight: bold;
      font-size: 20px;
-     /* color: hsl(99, 98%, 40%); */
-     /* color: #000000; */
+     color: #000000;
      text-decoration: none;
 }
 
 /* bodies para */
 .bodyVuelo {
-     /* background-image: url("../Images/aerolinea/globe.jpg"); */
-     /* background-position: center; */
-     background-size: cover;
-     background-color: #ffffff;
+     background-color: #b4dfef;
 
+}
+.container_invoise{
+     background-color: #fff;
 }
 
 
 
 h1 {
-     font-size: 70px;
+     font-size: 60px;
 }
 
 /* barra de navegacion */
 .navbar {
      padding: 0;
      display: grid;
-     grid-template-columns: 250px auto;
-     background-color: #0032a0;
-     color: #ffffff;
+     grid-template-columns: 200px 1fr 200px;
+     background-color: rgba(255, 60, 0, 0.482);
+}
+
+.image a img {
+
+     width: 100px;
 }
 
 /* botones */
@@ -62,35 +80,79 @@ h1 {
 
 /* Inputs */
 input[Type="Text"] {
-     text-align: center;
+     background: transparent;
+     background-clip: blur(10px);
      color: #000;
      border: none;
-     border-bottom: 1px solid black;
+     border-bottom: 1px solid #000000;
 }
 
 input:focus {
+     text-decoration: none;
      border: none;
-     text-align: center;
+}
+
+input::placeholder {
+     color: #000000;
+     font-size: 15px;
 }
 
 /* secciion de todo */
 .container {
-     /* width: auto; */
-     /* align-items: center; */
-     /* padding: 50px 0 0 50px; */
      margin: 0 50px 0 50px;
      border-radius: 10px;
-     background-color: #ffff;
+     /* background-color: #ffffff6f; */
      box-shadow: 1px 1px 5px #000;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     background-image: url("../Image/main.jpg");
+     background-size: cover;
+     /* place-items: center;  */
+
 }
 
-.formFlight {
+/* titulo de aggenda una cita */
+.agenda {
+     font-size: 25px;
+     backdrop-filter: blur(100px);
 
+}
+
+.datosPer {
      display: flex;
      flex-direction: column;
-     flex-wrap: wrap;
-     border: #000 1px solid;
+
+
 }
+
+.form_main {
+     margin: 5px;
+     background-color: #fff;
+     border-radius: 10px;
+}
+
+/* titulos de nosotsos, contact us y demas  */
+.title {
+     padding: 0px;
+     /* border: #000 1px solid; */
+     border-radius: 20px 0;
+     /* font-size: 25px; */
+     background-image: url("../Image/titles.jpg");
+     background-repeat: repeat;
+     background-position: center;
+}
+
+.title h1 {
+     backdrop-filter: blur(5px);
+}
+
+/* imagenes de la info de contact us, nosoros demas */
+.info {
+     display: grid;
+     grid-template-columns: auto 1fr;
+}
+
+
 
 
 
@@ -103,5 +165,30 @@ input:focus {
      position: relative;
      background-color: #a920207f;
      width: 500px;
+
+}
+
+table {
+     /* background-color: #fff; */
+     border: 1px solid black;
+}
+
+th {
+     font-weight: bold;
+}
+
+td {
+     border: 1px solid rgb(3, 253, 45);
+
+}
+
+
+
+/* Tratamientos  */
+
+select {
+     border-radius: 20px;
+     border: none;
+     font-size: 20px;
 
 }
