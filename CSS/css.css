@@ -46,7 +46,10 @@
      background-color: #b4dfef;
 
 }
+/* facturas  */
 .container_invoise{
+     display: grid;
+     grid-template-columns: 500px 1fr;
      background-color: #fff;
 }
 
@@ -191,4 +194,8 @@ selecte {
      border: none;
      font-size: 20px;
 
+}
+
+.userInfo{
+     border: #000 1px solid;
 }
