@@ -10,8 +10,9 @@ function getData()
      $email = $_POST['email'];
      $phone = $_POST["phone"];
      $tratamiento = $_POST['Tratamientos'];
+     $fecha_cita = $_POST['date_consult'];
 
-     return $datos = array($nombre, $apellido, $cedula, $email, $phone, $tratamiento);
+     return $datos = array($nombre, $apellido, $cedula, $email, $phone, $tratamiento,$fecha_cita);
 }
 
 
@@ -53,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           // echo "2 ".$client[2].'<br>';
           // echo "3 ".$client[3].'<br>';
           // echo "4 ".$client[4].'<br>';
-          // echo "5 ".$client[5].'<br>';
+          // echo "Fecha ".$client[6].'<br>';
 
           // header("Location:invoice.php");
 
@@ -134,6 +135,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                          </select>
 
+                         <div class="date">
+                              <input name="date_consult"type="date">
+                         </div>
                     </div>
 
                     <button name="mainBTN" class="mainBTN">Agendar</button>
