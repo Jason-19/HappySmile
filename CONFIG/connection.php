@@ -12,9 +12,6 @@ if ($conn->connect_error) {
      echo "SQL❌";
      die("Conexión fallida: " . $conn->connect_error);
 } else {
-<<<<<<< HEAD
-     // echo "SQL✅";
-=======
-     //echo "SQL✅";
->>>>>>> 5f86c141751ed4bea89dbe57230aa234b054d8ce
+echo "SQL✅";
+
 }
