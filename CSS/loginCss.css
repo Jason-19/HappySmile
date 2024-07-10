@@ -1,0 +1,157 @@
+* {
+
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+*/navegacion principal*/ .nav-bg {
+    background-color: greenyellow;
+
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.Navegacion-Principal {
+
+    background-color: aquamarine;
+}
+
+.Navegacion-Principal a {
+    color: rgb(16, 16, 15);
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+.titlee {
+    font-style: oblique;
+    text-align: center;
+    font-family: "dancing script", cursive;
+    font-weight: bold;
+}
+
+.titlee span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(11, 11, 11);
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.hero {
+    margin: 0;
+    background-color: bisque;
+    height: 516px;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: black;
+
+
+}
+
+.formulario {
+    background-image: url(https://i.pinimg.com/564x/29/3b/01/293b013303b18cd5aefb818ec509ff5f.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: min(38rem, 100%);
+    height: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.botones {
+    width: 38px;
+    height: 38px;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600px;
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.input-text {
+    background-color: aquamarine;
+    width: 54%;
+    border: 1.2rem;
+    padding: 9px;
+    border-radius: 1rem;
+}
+
+.input-password {
+    background-color: aquamarine;
+    width: 54%;
+    border: 1.2rem;
+    padding: 9px;
+    border-radius: 1rem;
+}
+
+.usuary {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.contra {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+.parrafo {
+
+
+    text-align: center;
+    height: 410px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/* EERORES */
+.error2 {
+    position: absolute;
+    background-color: #fe0000;
+    width: 500px;
+    padding: 20px;
+    border-radius: 0 50px 50px 0;
+    z-index: 1;
+    text-align: center;
+    left: 10px;
+
+}
